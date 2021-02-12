@@ -36,11 +36,12 @@ const Home: React.FC = () => {
     const setLayerVisibility = (layer: Layer, visible: boolean): void => {
         const map = mapRef.current?.getMap()
         if (!map) return
+
         if (visible) {
+            map.setLayoutProperty(layer.id, 'visibility', 'visible')
             setActiveLayers((prev) => [...prev, layer.id])
-            map.addLayer(layer)
         } else {
-            map.removeLayer(layer.id)
+            map.setLayoutProperty(layer.id, 'visibility', 'none')
             setActiveLayers((prev) => prev.filter((id) => id !== layer.id))
         }
     }
