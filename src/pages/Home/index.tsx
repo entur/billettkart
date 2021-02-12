@@ -51,8 +51,8 @@ const Home: React.FC = () => {
                 ref={mapRef}
                 onLoad={onLoad}
                 {...viewport}
-                mapboxApiAccessToken={process.env.MAPBOX_TOKEN}
-                mapStyle={process.env.MAPBOX_STYLE}
+                mapboxApiAccessToken="pk.eyJ1IjoiZW50dXIiLCJhIjoiY2tsMTI0eWF2MTVzZjJxcDB4Mjg1OWhueSJ9.-UbvDTcEvuMSRl5qbxpqBg"
+                mapStyle="mapbox://styles/entur/ck71tudd803k01ipem9pw1qsw"
                 onViewportChange={(nextViewport: any) =>
                     setViewport(nextViewport)
                 }
