@@ -27,7 +27,7 @@ const Home: React.FC = () => {
         if (!map) return
         const style = map.getStyle()
         const allLayers = (style.layers as Layer[]).filter(
-            (layer) => layer.id !== 'background',
+            (layer) => !layer.id.startsWith('_'),
         )
         setLayers(allLayers)
         setActiveLayers(allLayers.map(({ id }) => id))
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
                 onLoad={onLoad}
                 {...viewport}
                 mapboxApiAccessToken="pk.eyJ1IjoiZW50dXIiLCJhIjoiY2tsMTI0eWF2MTVzZjJxcDB4Mjg1OWhueSJ9.-UbvDTcEvuMSRl5qbxpqBg"
-                mapStyle="mapbox://styles/entur/ck71tudd803k01ipem9pw1qsw"
+                mapStyle="mapbox://styles/entur/ckl2e5p2o0pin17mp7v8ijtu4"
                 onViewportChange={(nextViewport: any) =>
                     setViewport(nextViewport)
                 }
