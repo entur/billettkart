@@ -220,6 +220,7 @@ const Home: React.FC = () => {
                                 marginBottom: 8,
                                 maxHeight: 50,
                             }}
+                            alt="Entur tilbudskart"
                         />
                     </Heading1>
                 </header>
