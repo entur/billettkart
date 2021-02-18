@@ -218,7 +218,7 @@ const Home: React.FC = () => {
                             style={{
                                 marginRight: 10,
                                 marginBottom: 8,
-                                maxHeight: 50,
+                                maxHeight: 40,
                             }}
                             alt="Entur tilbudskart"
                         />
