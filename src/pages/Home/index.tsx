@@ -10,7 +10,7 @@ import { Checkbox, Fieldset } from '@entur/form'
 import { Contrast } from '@entur/layout'
 import { Heading1, Paragraph } from '@entur/typography'
 
-import Logo from '../../Logo'
+import Logo from './Logo.svg'
 
 import sellableGeojson from './sellable.json'
 import trafikkpakkeneGeojson from './trafikkpakkene.json'
@@ -212,19 +212,21 @@ const Home: React.FC = () => {
                         alignItems: 'center',
                     }}
                 >
-                    <Logo
-                        height="40px"
-                        width="110px"
-                        style={{ marginRight: 10, marginBottom: 8 }}
-                    />
-                    <Heading1 margin="none" style={{ marginLeft: 10 }}>
-                        Tilbudskart
+                    <Heading1 margin="none">
+                        <img
+                            src={Logo}
+                            style={{
+                                marginRight: 10,
+                                marginBottom: 8,
+                                maxHeight: 50,
+                            }}
+                        />
                     </Heading1>
                 </header>
                 <Paragraph>
                     Her kan du se hva du kan kjøpe i Entur-appen.
                 </Paragraph>
-                <Fieldset label="Hva vil du se?">
+                <Fieldset label="Hva vil du se?" style={{ marginTop: '2rem' }}>
                     {layers.map((layer) => (
                         <Checkbox
                             checked={activeLayers.includes(layer.id)}
