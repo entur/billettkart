@@ -103,7 +103,7 @@ const Home: React.FC = () => {
         })
 
         map.addLayer({
-            id: 'Trafikkpakkene',
+            id: '_jernbane',
             type: 'line',
             source: 'trafikkpakkene',
             layout: {
@@ -111,33 +111,68 @@ const Home: React.FC = () => {
                 'line-join': 'round',
             },
             paint: {
-                'line-width': [
-                    'case',
-                    ['==', ['get', 'trafikkpakke'], false],
-                    1,
-                    4,
-                ],
-                'line-color': [
-                    'case',
-                    ['has', 'trafikkpakke1'],
-                    '#ff9494',
-                    [
-                        'case',
-                        ['has', 'trafikkpakke2'],
-                        '#64b3e7',
-                        [
-                            'case',
-                            ['has', 'trafikkpakke3'],
-                            '#5ac39a',
-                            [
-                                'case',
-                                ['has', 'trafikkpakke4'],
-                                '#efd358',
-                                '#adb5e1',
-                            ],
-                        ],
-                    ],
-                ],
+                'line-width': 1,
+                'line-color': '#adb5e1',
+            },
+        })
+
+        map.addLayer({
+            id: 'Trafikkpakke 1',
+            type: 'line',
+            source: 'trafikkpakkene',
+            layout: {
+                'line-cap': 'round',
+                'line-join': 'round',
+            },
+            paint: {
+                'line-width': 4,
+                'line-opacity': ['case', ['has', 'trafikkpakke1'], 1, 0],
+                'line-color': '#ff9494',
+            },
+        })
+
+        map.addLayer({
+            id: 'Trafikkpakke 2',
+            type: 'line',
+            source: 'trafikkpakkene',
+            layout: {
+                'line-cap': 'round',
+                'line-join': 'round',
+            },
+            paint: {
+                'line-width': 4,
+                'line-opacity': ['case', ['has', 'trafikkpakke2'], 1, 0],
+                'line-color': '#64b3e7',
+            },
+        })
+
+        map.addLayer({
+            id: 'Trafikkpakke 3',
+            type: 'line',
+            source: 'trafikkpakkene',
+            layout: {
+                'line-cap': 'round',
+                'line-join': 'round',
+            },
+            paint: {
+                'line-width': 4,
+                'line-opacity': ['case', ['has', 'trafikkpakke3'], 1, 0],
+                'line-color': '#5ac39a',
+            },
+        })
+
+        map.addLayer({
+            id: 'Trafikkpakke 4',
+            type: 'line',
+            source: 'trafikkpakkene',
+            layout: {
+                'line-cap': 'round',
+                'line-join': 'round',
+            },
+            paint: {
+                'line-width': 4,
+                'line-opacity': ['case', ['has', 'trafikkpakke4'], 1, 0],
+                'line-color': '#efd358',
             },
         })
 
