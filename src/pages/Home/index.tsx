@@ -113,6 +113,12 @@ const Home: React.FC = () => {
             paint: {
                 'line-width': 1,
                 'line-color': '#adb5e1',
+                'line-opacity': [
+                    'case',
+                    ['==', ['get', 'trafikkpakke'], false],
+                    1,
+                    0,
+                ],
             },
         })
 
@@ -157,6 +163,7 @@ const Home: React.FC = () => {
             paint: {
                 'line-width': 4,
                 'line-opacity': ['case', ['has', 'trafikkpakke3'], 1, 0],
+                'line-offset': -4,
                 'line-color': '#00db9b',
             },
         })
@@ -173,6 +180,23 @@ const Home: React.FC = () => {
                 'line-width': 4,
                 'line-opacity': ['case', ['has', 'trafikkpakke4'], 1, 0],
                 'line-color': '#f08901',
+                'line-offset': 4,
+            },
+        })
+
+        map.addLayer({
+            id: 'Trafikkpakke 5',
+            type: 'line',
+            source: 'trafikkpakkene',
+            layout: {
+                'line-cap': 'round',
+                'line-join': 'round',
+            },
+            paint: {
+                'line-width': 4,
+                'line-opacity': ['case', ['has', 'trafikkpakke5'], 1, 0],
+                'line-color': '#6fdfff',
+                'line-offset': 4,
             },
         })
 
