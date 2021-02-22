@@ -180,7 +180,7 @@ const Home: React.FC = () => {
                 'line-width': 4,
                 'line-opacity': ['case', ['has', 'trafikkpakke4'], 1, 0],
                 'line-color': '#f08901',
-                'line-offset': 4,
+                'line-offset': 8,
             },
         })
 
