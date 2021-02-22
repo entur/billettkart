@@ -254,6 +254,7 @@ const Home: React.FC = () => {
                                 marginRight: 10,
                                 marginBottom: 8,
                                 maxHeight: 40,
+                                maxWidth: '40vw',
                             }}
                             alt="Entur billettkart"
                         />
