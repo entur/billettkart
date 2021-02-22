@@ -255,7 +255,7 @@ const Home: React.FC = () => {
                                 marginBottom: 8,
                                 maxHeight: 40,
                             }}
-                            alt="Entur tilbudskart"
+                            alt="Entur billettkart"
                         />
                     </Heading1>
                 </header>
