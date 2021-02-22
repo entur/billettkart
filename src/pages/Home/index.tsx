@@ -127,7 +127,7 @@ const Home: React.FC = () => {
             paint: {
                 'line-width': 4,
                 'line-opacity': ['case', ['has', 'trafikkpakke1'], 1, 0],
-                'line-color': '#ff9494',
+                'line-color': '#ff6392',
             },
         })
 
@@ -142,7 +142,7 @@ const Home: React.FC = () => {
             paint: {
                 'line-width': 4,
                 'line-opacity': ['case', ['has', 'trafikkpakke2'], 1, 0],
-                'line-color': '#64b3e7',
+                'line-color': '#42a5f5',
             },
         })
 
@@ -157,7 +157,7 @@ const Home: React.FC = () => {
             paint: {
                 'line-width': 4,
                 'line-opacity': ['case', ['has', 'trafikkpakke3'], 1, 0],
-                'line-color': '#5ac39a',
+                'line-color': '#00db9b',
             },
         })
 
@@ -172,7 +172,7 @@ const Home: React.FC = () => {
             paint: {
                 'line-width': 4,
                 'line-opacity': ['case', ['has', 'trafikkpakke4'], 1, 0],
-                'line-color': '#efd358',
+                'line-color': '#f08901',
             },
         })
 
