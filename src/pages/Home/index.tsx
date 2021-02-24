@@ -123,6 +123,28 @@ const Home: React.FC = () => {
         })
 
         map.addLayer({
+            id: 'Enkeltbilletter',
+            type: 'fill',
+            source: 'zones',
+            layout: {},
+            paint: {
+                'fill-opacity': ['case', ['get', 'singleTickets'], 1, 0],
+                'fill-color': '#aeb7e2',
+            },
+        })
+
+        map.addLayer({
+            id: 'Periodebilletter',
+            type: 'fill',
+            source: 'zones',
+            layout: {},
+            paint: {
+                'fill-opacity': ['case', ['get', 'periodTickets'], 1, 0],
+                'fill-color': '#ff5959',
+            },
+        })
+
+        map.addLayer({
             id: 'Trafikkpakke 1',
             type: 'line',
             source: 'trafikkpakkene',
