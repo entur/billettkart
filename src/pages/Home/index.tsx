@@ -15,6 +15,8 @@ import Logo from './Logo.svg'
 import sellableGeojson from './sellable.json'
 import trafikkpakkeneGeojson from './trafikkpakkene.json'
 
+import LAYERS from './layers.json'
+
 import './styles.css'
 
 type ZoneProps = { id: string; singleTickets: boolean; periodTickets: boolean }
@@ -102,156 +104,7 @@ const Home: React.FC = () => {
             data: getTrafikkpakkeData(),
         })
 
-        map.addLayer({
-            id: '_jernbane',
-            type: 'line',
-            source: 'trafikkpakkene',
-            layout: {
-                'line-cap': 'round',
-                'line-join': 'round',
-            },
-            paint: {
-                'line-width': 1,
-                'line-color': '#adb5e1',
-                'line-opacity': [
-                    'case',
-                    ['==', ['get', 'trafikkpakke'], false],
-                    1,
-                    0,
-                ],
-            },
-        })
-
-        map.addLayer({
-            id: 'Enkeltbilletter',
-            type: 'fill',
-            source: 'zones',
-            layout: {},
-            paint: {
-                'fill-opacity': ['case', ['get', 'singleTickets'], 1, 0],
-                'fill-color': '#aeb7e2',
-            },
-        })
-
-        map.addLayer({
-            id: 'Periodebilletter',
-            type: 'fill',
-            source: 'zones',
-            layout: {},
-            paint: {
-                'fill-opacity': ['case', ['get', 'periodTickets'], 1, 0],
-                'fill-color': '#ff5959',
-            },
-        })
-
-        map.addLayer({
-            id: 'Trafikkpakke 1',
-            type: 'line',
-            source: 'trafikkpakkene',
-            layout: {
-                'line-cap': 'round',
-                'line-join': 'round',
-            },
-            paint: {
-                'line-width': 4,
-                'line-opacity': ['case', ['has', 'trafikkpakke1'], 1, 0],
-                'line-color': '#ff6392',
-            },
-        })
-
-        map.addLayer({
-            id: 'Trafikkpakke 2',
-            type: 'line',
-            source: 'trafikkpakkene',
-            layout: {
-                'line-cap': 'round',
-                'line-join': 'round',
-            },
-            paint: {
-                'line-width': 4,
-                'line-opacity': ['case', ['has', 'trafikkpakke2'], 1, 0],
-                'line-color': '#42a5f5',
-            },
-        })
-
-        map.addLayer({
-            id: 'Trafikkpakke 3',
-            type: 'line',
-            source: 'trafikkpakkene',
-            layout: {
-                'line-cap': 'round',
-                'line-join': 'round',
-            },
-            paint: {
-                'line-width': 4,
-                'line-opacity': ['case', ['has', 'trafikkpakke3'], 1, 0],
-                'line-offset': -4,
-                'line-color': '#00db9b',
-            },
-        })
-
-        map.addLayer({
-            id: 'Trafikkpakke 4',
-            type: 'line',
-            source: 'trafikkpakkene',
-            layout: {
-                'line-cap': 'round',
-                'line-join': 'round',
-            },
-            paint: {
-                'line-width': 4,
-                'line-opacity': ['case', ['has', 'trafikkpakke4'], 1, 0],
-                'line-color': '#f08901',
-                'line-offset': 8,
-            },
-        })
-
-        map.addLayer({
-            id: 'Trafikkpakke 5',
-            type: 'line',
-            source: 'trafikkpakkene',
-            layout: {
-                'line-cap': 'round',
-                'line-join': 'round',
-            },
-            paint: {
-                'line-width': 4,
-                'line-opacity': ['case', ['has', 'trafikkpakke5'], 1, 0],
-                'line-color': '#6fdfff',
-                'line-offset': 4,
-            },
-        })
-
-        map.addLayer({
-            id: '_prikker',
-            type: 'circle',
-            source: 'trafikkpakkene',
-            filter: ['match', ['get', 'place'], ['city'], true, false],
-            paint: {
-                'circle-color': '#393d79',
-                'circle-opacity': [
-                    'interpolate',
-                    ['linear'],
-                    ['zoom'],
-                    4,
-                    0,
-                    5,
-                    1,
-                ],
-                'circle-radius': 4,
-                'circle-stroke-color': '#fff',
-                'circle-stroke-width': 1.5,
-                'circle-stroke-opacity': [
-                    'interpolate',
-                    ['linear'],
-                    ['zoom'],
-                    4,
-                    0,
-                    5,
-                    1,
-                ],
-            },
-        })
+        LAYERS.forEach((layer) => map.addLayer(layer))
 
         const allLayers = (map.getStyle().layers as Layer[]).filter(
             (layer) => !layer.id.startsWith('_'),
