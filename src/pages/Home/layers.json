@@ -5,7 +5,7 @@
         "source": "singleTickets",
         "layout": {},
         "paint": {
-            "fill-color": "#aeb7e2"
+            "fill-color": "#8184a7"
         }
     },
     {
@@ -14,7 +14,7 @@
         "source": "periodTickets",
         "layout": {},
         "paint": {
-            "fill-color": "#ffbf9e"
+            "fill-color": "#aeb7e2"
         }
     },
     {
