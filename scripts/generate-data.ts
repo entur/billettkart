@@ -20,11 +20,8 @@ const PERIOD_TICKETS_CONFIG = {
 }
 
 const SINGLE_TICKETS_CONFIG = {
-    counties: ['Viken', 'Innlandet'],
+    counties: ['Viken', 'Oslo', 'Innlandet'],
     tariffZones: [
-        /BRA:/, // Alle Brakar-sonene
-        /OST:/, // Alle Østfold-sonene
-        /RUT:/, // Alle Ruter-sonene
         'SKY:TariffZone:A', // Skyss sone A
         'TEL:TariffZone:860', // Siljan
         'TEL:TariffZone:861', // Skien
