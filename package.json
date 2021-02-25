@@ -9,6 +9,7 @@
         "@entur/icons": "^1.19.0",
         "@entur/layout": "^1.10.1",
         "@entur/menu": "^3.5.5",
+        "@entur/sdk": "^3.4.0",
         "@entur/tokens": "^3.0.1",
         "@entur/typography": "^1.6.4",
         "@turf/bezier-spline": "^6.3.0",
@@ -27,7 +28,8 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "format": "prettier src --write",
-        "deploy": "npm run build && firebase deploy"
+        "deploy": "npm run build && firebase deploy",
+        "generate-data": "node --require ts-node/register/transpile-only scripts/generate-data.ts"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -51,6 +53,7 @@
         "@types/react-router-dom": "^5.1.7",
         "firebase-tools": "^9.4.0",
         "prettier": "^2.2.1",
+        "ts-node": "^9.1.1",
         "typescript": "^4.1.5"
     }
 }

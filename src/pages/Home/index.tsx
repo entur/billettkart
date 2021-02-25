@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 import ReactMapGL, { MapRef } from 'react-map-gl'
 import { Layer } from 'mapbox-gl'
-import { Feature, FeatureCollection, LineString, Polygon } from 'geojson'
+import { Feature, FeatureCollection, LineString } from 'geojson'
 
 import bezierSpline from '@turf/bezier-spline'
 import simplify from '@turf/simplify'
@@ -12,16 +12,12 @@ import { Heading1, Paragraph } from '@entur/typography'
 
 import Logo from './Logo.svg'
 
-import sellableGeojson from './sellable.json'
 import trafikkpakkeneGeojson from './trafikkpakkene.json'
 
 import LAYERS from './layers.json'
 
 import './styles.css'
 
-type ZoneProps = { id: string; singleTickets: boolean; periodTickets: boolean }
-
-const sellable = sellableGeojson as FeatureCollection<Polygon, ZoneProps>
 const trafikkpakkene = trafikkpakkeneGeojson as FeatureCollection
 
 type SmoothOptions = {
@@ -55,10 +51,6 @@ function smoothenGeojson(
     }
 }
 
-function getZonesData() {
-    return sellable
-}
-
 function getTrafikkpakkeData() {
     return smoothenGeojson({
         type: 'FeatureCollection',
@@ -89,14 +81,20 @@ const Home: React.FC = () => {
 
         map.removeLayer('_stedsprikker')
         map.removeLayer('_jernbanelinjer')
+        map.removeLayer('Sonebilletter')
         map.removeLayer('Trafikkpakke 1')
         map.removeLayer('Trafikkpakke 2')
         map.removeLayer('Trafikkpakke 3')
         map.removeLayer('Trafikkpakke 4')
 
-        map.addSource('zones', {
+        map.addSource('periodTickets', {
             type: 'geojson',
-            data: getZonesData(),
+            data: 'periodTickets.json',
+        })
+
+        map.addSource('singleTickets', {
+            type: 'geojson',
+            data: 'singleTickets.json',
         })
 
         map.addSource('trafikkpakkene', {
