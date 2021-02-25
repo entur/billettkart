@@ -34,6 +34,37 @@ type LineProps = {
 
 type LineFeature = Feature<MultiLineString, LineProps>
 
+function samePoint(a: number[], b: number[]): boolean {
+    return a[0] === b[0] && a[1] === b[1]
+}
+
+function linesOverlapping(line1: number[][], line2: number[][]): boolean {
+    const longestLine = line1.length > line2.length ? line1 : line2
+    const shortestLine = line1.length > line2.length ? line2 : line1
+
+    const startIndex = longestLine.findIndex((point) =>
+        samePoint(point, shortestLine[0]),
+    )
+
+    if (startIndex < 0) return false
+
+    for (
+        let shortestIndex = 0;
+        shortestIndex < shortestLine.length;
+        shortestIndex++
+    ) {
+        const longestIndex = startIndex + shortestIndex
+        const pointA = longestLine[longestIndex]
+        const pointB = shortestLine[shortestIndex]
+
+        if (!pointA || !samePoint(pointA, pointB)) {
+            return false
+        }
+    }
+
+    return true
+}
+
 async function getLineWithPattern(id: string): Promise<LineFeature | null> {
     const { line } = await sdk.queryJourneyPlanner<{
         line: Line
@@ -50,12 +81,29 @@ async function getLineWithPattern(id: string): Promise<LineFeature | null> {
         type: 'Feature',
         geometry: {
             type: 'MultiLineString',
-            coordinates: line.journeyPatterns.map((journeyPattern) => {
-                const coords = polyline
-                    .decode(journeyPattern.pointsOnLink.points)
-                    .map(([lat, lon]) => [lon, lat])
-                return coords
-            }),
+            coordinates: line.journeyPatterns
+                // Remove duplicate pointsOnLink before decoding
+                .filter(
+                    (jp, i, array) =>
+                        i ===
+                        array.findIndex(
+                            ({ pointsOnLink }) =>
+                                pointsOnLink.points === jp.pointsOnLink.points,
+                        ),
+                )
+                // Decode pointsOnLink to coordinate arrays
+                .map((journeyPattern) =>
+                    polyline
+                        .decode(journeyPattern.pointsOnLink.points)
+                        .map(([lat, lon]) => [lon, lat]),
+                )
+                // Remove all lines contained by another line
+                .filter((line, i, lines) => {
+                    const otherLineStrings = lines.filter((l) => l !== line)
+                    return !otherLineStrings.some((l) =>
+                        linesOverlapping(l, line),
+                    )
+                }),
         },
         properties: {
             id: line.id,
@@ -64,7 +112,7 @@ async function getLineWithPattern(id: string): Promise<LineFeature | null> {
     }
 }
 
-async function downloadTariffZones() {
+async function downloadLines() {
     try {
         const { lines } = await sdk.queryJourneyPlanner<{
             lines: LineId[]
@@ -92,4 +140,4 @@ async function downloadTariffZones() {
     }
 }
 
-void downloadTariffZones()
+void downloadLines()
