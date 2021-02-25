@@ -102,23 +102,6 @@
             "type": "Feature",
             "properties": {
                 "line": "rail",
-                "name": "narvikbanen",
-                "trafikkpakke": false
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [17.11669647217, 68.1695136015],
-                    [18.3306829834, 68.16134237676],
-                    [19.40734313965, 68.03019013941],
-                    [20.2395602417, 67.78745082047]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
                 "name": "Hovedbanen",
                 "rail-line": "VY-L12;VY-L13;VY-R10;VY-R11;SJN-71;FLT-1",
                 "trafikkpakke": "2;5",
@@ -525,25 +508,6 @@
             "type": "Feature",
             "properties": {
                 "line": "rail",
-                "name": "Värmlandsbanan",
-                "rail-line": "SJV-70",
-                "trafikkpakke": false
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [12.58346420288, 59.65525539788],
-                    [12.53951889038, 59.66496703755],
-                    [12.36923080444, 59.75362884307],
-                    [12.36236434937, 59.8420559784],
-                    [12.24906904221, 59.92878602297]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
                 "name": "Rørosbanen",
                 "trafikkpakke": "2",
                 "trafikkpakke2": true
@@ -665,22 +629,6 @@
             "type": "Feature",
             "properties": {
                 "line": "rail",
-                "trafikkpakke": false
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [10.2540203476, 60.1664507151],
-                    [10.42499507904, 60.25003467001],
-                    [10.440616436, 60.29446895054],
-                    [10.58738639832, 60.29531984977]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
                 "name": "Østfoldbanen vestre linje",
                 "rail-line": "VY-L2;VY-L21;VY-L22;VY-R20",
                 "trafikkpakke": "4",
@@ -696,25 +644,6 @@
                     [10.76282484055, 59.88893698288],
                     [10.76179487228, 59.90813590351],
                     [10.73776176453, 59.9130417285]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
-                "name": "Gardermobanen",
-                "trafikkpakke": false,
-                "rail-line": "SJN-21",
-                "trapak": "2",
-                "trafikkpakke2": true
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [11.26510585785, 60.33000708478],
-                    [11.14768913269, 60.28034528068],
-                    [11.10237052917, 60.19513223662]
                 ]
             }
         },
@@ -882,26 +811,6 @@
                 "coordinates": [
                     [11.17687529598, 60.14229349913],
                     [11.26510585785, 60.33000708478]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
-                "name": "Østfoldbanen vestre linje",
-                "rail-line": "VY-R20",
-                "trafikkpakke": false
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [11.93252494812, 58.91244698446],
-                    [11.73202445984, 58.91138332542],
-                    [11.5528099823, 58.96488018391],
-                    [11.4738457489, 59.06633122719],
-                    [11.46972587585, 59.12487376865],
-                    [11.39144828796, 59.12487376865]
                 ]
             }
         },
