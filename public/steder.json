@@ -1,0 +1,450 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Elverum",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.54388153076, 60.88636507525]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sarpsborg",
+                "place": "city",
+                "trafikkpakke": "4",
+                "trafikkpakke4": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.09001091003, 59.27570514094]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lillehammer",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.45486312866, 61.12400944447]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rognan",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [15.38657087361, 67.09739398159]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "line": "rail",
+                "name": "Flåmsbanen",
+                "rail-line": "VY-42",
+                "trafikkpakke": false
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [7.12295974731, 60.73491686668],
+                    [7.11913993835, 60.86196670809]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Flåm",
+                "place": "city",
+                "trafikkpakke": false
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [7.11913993835, 60.86196670809]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fredrikstad",
+                "place": "city",
+                "trafikkpakke": "4",
+                "trafikkpakke4": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.95663053513, 59.20960039312]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lillestrøm",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.04675224304, 59.95604195853]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gjøvik",
+                "place": "city",
+                "trafikkpakke": "4",
+                "trafikkpakke4": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.68780761718, 60.79477809594]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Åndalsnes",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [7.68974235535, 62.55887008386]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Myrdal",
+                "place": "city",
+                "trafikkpakke": "3",
+                "trafikkpakke3": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [7.12295974731, 60.73491686668]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stavanger",
+                "place": "city",
+                "trafikkpakke": "1",
+                "trafikkpakke1": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [5.73108638763, 58.9659420184]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bodø",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [14.36462127686, 67.26461447393]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Moss",
+                "place": "city",
+                "trafikkpakke": "4",
+                "trafikkpakke4": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.66703727722, 59.43215754283]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Arendal",
+                "place": "city",
+                "trafikkpakke": "1",
+                "trafikkpakke1": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.76022201538, 58.46210279578]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oslo",
+                "place": "city",
+                "trafikkpakke": "1;2",
+                "trafikkpakke1": true,
+                "trafikkpakke2": true,
+                "trafikkpakke3": true,
+                "trafikkpakke4": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.73776176453, 59.9130417285]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Egersund",
+                "place": "city",
+                "trafikkpakke": "1",
+                "trafikkpakke1": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [5.99853378296, 58.45491889293]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ski",
+                "place": "city",
+                "trafikkpakke": "4",
+                "trafikkpakke4": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.83595207214, 59.72110027595]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Steinkjer",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.48620330811, 64.01570076997]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hønefoss",
+                "place": "city",
+                "trafikkpakke": "3",
+                "trafikkpakke3": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.2540203476, 60.1664507151]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hamar",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.06872421265, 60.79737456053]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nelaug",
+                "place": "city",
+                "trafikkpakke": "1",
+                "trafikkpakke1": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.63010372162, 58.65783517536]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Støren",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.29041255951, 63.0367518807]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eidsvoll",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.26510585785, 60.33000708478]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dombås",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [9.12654842377, 62.07350834264]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Røros",
+                "place": "city",
+                "trafikkpakke": "2",
+                "trafikkpakke2": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.38011898041, 62.57421290283]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kongsberg",
+                "place": "city",
+                "trafikkpakke": "1",
+                "trafikkpakke1": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [9.64805534363, 59.66947471038]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bergen",
+                "place": "city",
+                "trafikkpakke": "3",
+                "trafikkpakke3": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [5.32630851746, 60.38977346172]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rakkestad",
+                "place": "city",
+                "trafikkpakke": "4",
+                "trafikkpakke4": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.34029354095, 59.42814133878]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Drammen",
+                "place": "city",
+                "trafikkpakke": "1",
+                "trafikkpakke1": true,
+                "trafikkpakke3": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.20080497742, 59.74117461999]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Halden",
+                "place": "city",
+                "trafikkpakke": "4",
+                "trafikkpakke4": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.39144828796, 59.12487376865]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sandefjord",
+                "place": "city"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.21865707397, 59.1336821128]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kristiansand",
+                "place": "city",
+                "trafikkpakke": "1",
+                "trafikkpakke1": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [7.9884324646, 58.14462027609]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oslo Lufthavn",
+                "place": "city",
+                "trafikkpakke": false
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.10237052917, 60.19513223662]
+            }
+        }
+    ]
+}

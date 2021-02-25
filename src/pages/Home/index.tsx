@@ -102,6 +102,11 @@ const Home: React.FC = () => {
             data: getTrafikkpakkeData(),
         })
 
+        map.addSource('steder', {
+            type: 'geojson',
+            data: 'steder.json',
+        })
+
         LAYERS.forEach((layer) => map.addLayer(layer))
 
         const allLayers = (map.getStyle().layers as Layer[]).filter(

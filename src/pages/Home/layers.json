@@ -93,7 +93,7 @@
     {
         "id": "_prikker",
         "type": "circle",
-        "source": "trafikkpakkene",
+        "source": "steder",
         "filter": ["match", ["get", "place"], ["city"], true, false],
         "paint": {
             "circle-color": "#393d79",
