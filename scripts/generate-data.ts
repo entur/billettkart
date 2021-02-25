@@ -1,6 +1,6 @@
 import fs from 'fs'
 import util from 'util'
-import { Feature, FeatureCollection, Polygon } from 'geojson'
+import { Feature, FeatureCollection, MultiPolygon, Polygon } from 'geojson'
 
 const readFile = util.promisify(fs.readFile)
 const writeFile = util.promisify(fs.writeFile)
@@ -51,7 +51,7 @@ type CountyProps = {
     name: string
 }
 
-type County = Feature<Polygon, CountyProps>
+type County = Feature<MultiPolygon, CountyProps>
 
 async function main() {
     try {
@@ -63,7 +63,10 @@ async function main() {
                 encoding: 'utf-8',
             }),
         )
-        const counties: FeatureCollection<Polygon, CountyProps> = JSON.parse(
+        const counties: FeatureCollection<
+            MultiPolygon,
+            CountyProps
+        > = JSON.parse(
             await readFile('data/counties.json', {
                 encoding: 'utf-8',
             }),
