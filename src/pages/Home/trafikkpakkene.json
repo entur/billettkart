@@ -31,23 +31,6 @@
             "type": "Feature",
             "properties": {
                 "line": "rail",
-                "name": "Østfoldbanen vestre linje",
-                "rail-line": "VY-L21;VY-R20",
-                "trafikkpakke": "4",
-                "trafikkpakke4": true
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [10.66703727722, 59.43215754283],
-                    [10.83595207214, 59.72110027595]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
                 "name": "Dovrebanen",
                 "rail-line": "SJN-21;SJN-22",
                 "trafikkpakke": "2",
@@ -129,6 +112,10 @@
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
+                    [11.39144828796, 59.12487376865],
+                    [11.29428829193, 59.12452122567],
+                    [11.1373897934, 59.27535415141],
+                    [11.17618526459, 59.27517874299],
                     [11.34029354095, 59.42814133878],
                     [11.32415737152, 59.55520037328],
                     [11.0412594223, 59.62280455569],
@@ -140,25 +127,11 @@
             "type": "Feature",
             "properties": {
                 "line": "rail",
-                "name": "Østfoldbanen østre linje"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [11.1373897934, 59.27535415141],
-                    [11.17618526459, 59.27517874299],
-                    [11.34029354095, 59.42814133878]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
                 "name": "Sørlandsbanen",
                 "rail-line": "VY-L12;GOA-50",
                 "trafikkpakke": "1",
-                "trafikkpakke1": true
+                "trafikkpakke1": true,
+                "stroke": "goldenrod"
             },
             "geometry": {
                 "type": "LineString",
@@ -176,7 +149,8 @@
                 "line": "rail",
                 "name": "Sørlandsbanen",
                 "trafikkpakke": "1",
-                "trafikkpakke1": true
+                "trafikkpakke1": true,
+                "stroke": "salmon"
             },
             "geometry": {
                 "type": "LineString",
@@ -191,7 +165,10 @@
                     [9.13238491058, 59.25938828489],
                     [9.04003108978, 59.38743033976],
                     [9.07093013763, 59.40962652133],
-                    [9.32121242523, 59.41801184388]
+                    [9.32121242523, 59.41801184388],
+                    [9.39811637878, 59.61221254253],
+                    [9.62058952332, 59.63964116543],
+                    [9.64805534363, 59.66947471038]
                 ]
             }
         },
@@ -261,7 +238,8 @@
                 "line": "rail",
                 "name": "Sørlandsbanen",
                 "trafikkpakke": "1",
-                "trafikkpakke1": true
+                "trafikkpakke1": true,
+                "stroke": "purple"
             },
             "geometry": {
                 "type": "LineString",
@@ -320,7 +298,8 @@
                 "name": "Østfoldbanen vestre linje",
                 "rail-line": "VY-R20",
                 "trafikkpakke": "4",
-                "trafikkpakke4": true
+                "trafikkpakke4": true,
+                "stroke": "#ff0"
             },
             "geometry": {
                 "type": "LineString",
@@ -333,7 +312,8 @@
                     [10.92109611511, 59.2107429902],
                     [10.84693840027, 59.34684560892],
                     [10.66841056824, 59.39756915709],
-                    [10.66703727722, 59.43215754283]
+                    [10.66703727722, 59.43215754283],
+                    [10.83595207214, 59.72110027595]
                 ]
             }
         },
@@ -374,24 +354,6 @@
                     [10.60584059715, 59.90787765267],
                     [10.67356075287, 59.92250639066],
                     [10.73776176453, 59.9130417285]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
-                "name": "Sørlandsbanen",
-                "trafikkpakke": "1",
-                "trafikkpakke1": true
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [9.33597547531, 59.49495479307],
-                    [9.39811637878, 59.61221254253],
-                    [9.62058952332, 59.63964116543],
-                    [9.64805534363, 59.66947471038]
                 ]
             }
         },
@@ -811,23 +773,6 @@
                 "coordinates": [
                     [11.17687529598, 60.14229349913],
                     [11.26510585785, 60.33000708478]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
-                "name": "Bratsbergbanen",
-                "rail-line": "52",
-                "trafikkpakke": "1",
-                "trafikkpakke1": true
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [9.33597547531, 59.49495479307],
-                    [9.32121242523, 59.41801184388]
                 ]
             }
         },
