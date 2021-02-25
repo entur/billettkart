@@ -102,23 +102,6 @@
             "type": "Feature",
             "properties": {
                 "line": "rail",
-                "name": "Vestfoldbanen",
-                "rail-line": "52;VY-R11",
-                "trafikkpakke5": true,
-                "trafikkpakke": "5"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [9.61166313171, 59.2107429902],
-                    [9.65011459351, 59.13861359888]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
                 "name": "narvikbanen",
                 "trafikkpakke": false
             },
@@ -542,31 +525,6 @@
             "type": "Feature",
             "properties": {
                 "line": "rail",
-                "name": "Vestfoldbanen",
-                "rail-line": "VY-R11",
-                "trafikkpakke": "5",
-                "trafikkpakke5": true
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [9.65011459351, 59.13861359888],
-                    [9.86228874207, 59.07621287976],
-                    [10.10948112488, 59.04338070896],
-                    [10.21865707397, 59.1336821128],
-                    [10.32852104187, 59.27114427538],
-                    [10.40817123413, 59.27149548374],
-                    [10.40130580902, 59.40962652133],
-                    [10.20492519379, 59.58458752387],
-                    [10.24440731049, 59.68784711375],
-                    [10.20080497742, 59.74117461999]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
                 "name": "Värmlandsbanan",
                 "rail-line": "SJV-70",
                 "trafikkpakke": false
@@ -745,23 +703,6 @@
             "type": "Feature",
             "properties": {
                 "line": "rail",
-                "name": "Bratsbergbanen",
-                "rail-line": "52",
-                "trafikkpakke5": true,
-                "trafikkpakke": "5"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [9.25666740417, 59.5597233176],
-                    [9.33597547531, 59.49495479307]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "line": "rail",
                 "name": "Gardermobanen",
                 "trafikkpakke": false,
                 "rail-line": "SJN-21",
@@ -890,10 +831,22 @@
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
+                    [9.25666740417, 59.5597233176],
+                    [9.33597547531, 59.49495479307],
                     [9.32121242523, 59.41801184388],
                     [9.36859096527, 59.30603671319],
                     [9.49493339539, 59.30516062768],
-                    [9.61166313171, 59.2107429902]
+                    [9.61166313171, 59.2107429902],
+                    [9.65011459351, 59.13861359888],
+                    [9.86228874207, 59.07621287976],
+                    [10.10948112488, 59.04338070896],
+                    [10.21865707397, 59.1336821128],
+                    [10.32852104187, 59.27114427538],
+                    [10.40817123413, 59.27149548374],
+                    [10.40130580902, 59.40962652133],
+                    [10.20492519379, 59.58458752387],
+                    [10.24440731049, 59.68784711375],
+                    [10.20080497742, 59.74117461999]
                 ]
             }
         },
@@ -958,9 +911,8 @@
                 "line": "rail",
                 "name": "Bratsbergbanen",
                 "rail-line": "52",
-                "trafikkpakke": "1;5",
-                "trafikkpakke1": true,
-                "trafikkpakke5": true
+                "trafikkpakke": "1",
+                "trafikkpakke1": true
             },
             "geometry": {
                 "type": "LineString",
