@@ -79,6 +79,7 @@ const Home: React.FC = () => {
         const map = mapRef.current?.getMap()
         if (!map) return
 
+        map.removeLayer('_stedsnavn')
         map.removeLayer('_stedsprikker')
 
         map.addSource('counties', {

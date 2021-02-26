@@ -134,5 +134,27 @@
                 1
             ]
         }
+    },
+    {
+        "id": "_stadsnamn",
+        "type": "symbol",
+        "source": "steder",
+        "minzoom": 7,
+        "layout": {
+            "text-field": ["to-string", ["get", "name"]],
+            "text-font": ["Rubik Medium", "Arial Unicode MS Regular"],
+            "text-size": ["interpolate", ["linear"], ["zoom"], 6, 11, 22, 30],
+            "text-justify": "left",
+            "text-anchor": "left",
+            "text-offset": [0.8, 0.1],
+            "text-padding": 0
+        },
+        "paint": {
+            "text-color": "#8489c2",
+            "text-halo-color": "hsl(236, 45%, 31%)",
+            "text-halo-blur": 0.5,
+            "text-halo-width": 1.7,
+            "text-opacity": ["interpolate", ["linear"], ["zoom"], 7.5, 0, 8, 1]
+        }
     }
 ]
