@@ -1,5 +1,28 @@
 [
     {
+        "id": "_kartbakgrunn",
+        "type": "fill",
+        "source": "counties",
+        "layout": {},
+        "paint": {
+            "fill-color": "#393d79",
+            "fill-outline-color": "hsl(0, 0%, 100%)"
+        }
+    },
+    {
+        "id": "_fylkesgrenser",
+        "type": "line",
+        "source": "counties",
+        "layout": {
+            "line-cap": "round",
+            "line-join": "round"
+        },
+        "paint": {
+            "line-color": "#191d58",
+            "line-width": 2.1
+        }
+    },
+    {
         "id": "Enkeltbilletter",
         "type": "fill",
         "source": "singleTickets",

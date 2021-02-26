@@ -80,12 +80,11 @@ const Home: React.FC = () => {
         if (!map) return
 
         map.removeLayer('_stedsprikker')
-        map.removeLayer('_jernbanelinjer')
-        map.removeLayer('Sonebilletter')
-        map.removeLayer('Trafikkpakke 1')
-        map.removeLayer('Trafikkpakke 2')
-        map.removeLayer('Trafikkpakke 3')
-        map.removeLayer('Trafikkpakke 4')
+
+        map.addSource('counties', {
+            type: 'geojson',
+            data: 'counties.json',
+        })
 
         map.addSource('periodTickets', {
             type: 'geojson',
