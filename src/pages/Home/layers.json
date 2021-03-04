@@ -28,7 +28,8 @@
         "source": "singleTickets",
         "layout": {},
         "paint": {
-            "fill-color": "#8184a7"
+            "fill-color": "#8184a7",
+            "fill-opacity": 0.8
         }
     },
     {
@@ -37,7 +38,8 @@
         "source": "periodTickets",
         "layout": {},
         "paint": {
-            "fill-color": "#aeb7e2"
+            "fill-color": "#aeb7e2",
+            "fill-opacity": 0.8
         }
     },
     {
