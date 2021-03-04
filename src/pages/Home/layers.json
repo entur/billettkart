@@ -123,9 +123,9 @@
         "paint": {
             "circle-color": "#393d79",
             "circle-opacity": ["interpolate", ["linear"], ["zoom"], 4, 0, 5, 1],
-            "circle-radius": 4,
+            "circle-radius": 3,
             "circle-stroke-color": "#fff",
-            "circle-stroke-width": 1.5,
+            "circle-stroke-width": 1,
             "circle-stroke-opacity": [
                 "interpolate",
                 ["linear"],
