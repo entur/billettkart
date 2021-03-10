@@ -163,7 +163,7 @@ const Home: React.FC = () => {
                     </Heading1>
                 </header>
                 <Paragraph>
-                    Her kan du se hva du kan kjøpe i Entur-appen.
+                    Her kan du se hva du kan kjøpe i Entur-appen og på entur.no.
                 </Paragraph>
                 <Fieldset label="Hva vil du se?" style={{ marginTop: '2rem' }}>
                     {layers.map((layer) => (
