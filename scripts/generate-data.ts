@@ -41,18 +41,9 @@ const PERIOD_TICKETS_CONFIG = {
 }
 
 const SINGLE_TICKETS_CONFIG = {
-    counties: ['Viken', 'Oslo', 'Innlandet'],
+    counties: ['Viken', 'Oslo', 'Innlandet', 'Vestfold og Telemark'],
     tariffZones: [
         'SKY:TariffZone:A', // Skyss sone A
-        'TEL:TariffZone:860', // Siljan
-        'TEL:TariffZone:861', // Skien
-        'TEL:TariffZone:862', // Porsgrunn
-        'TEL:TariffZone:863', // Bamble
-        'VKT:TariffZone:701', // Vestfold Nord
-        'VKT:TariffZone:702', // Tønsberg
-        'VKT:TariffZone:704', // Larvik
-        'VKT:TariffZone:601', // Drammen
-        'VKT:TariffZone:703', // Sandefjord
     ],
 }
 
