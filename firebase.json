@@ -34,7 +34,7 @@
                     },
                     {
                         "key": "Content-Security-Policy",
-                        "value": "default-src 'self'; connect-src 'self' https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com; script-src 'self' 'unsafe-inline' blob: https://events.mapbox.com; img-src 'self' data: blob: https://events.mapbox.com https://events.mapbox.com; style-src 'self' https://events.mapbox.com https://api.tiles.mapbox.com; font-src 'self'; frame-ancestors *; frame-src 'self' https://events.mapbox.com; object-src 'none'; media-src 'self'; worker-src blob:; child-src blob:"
+                        "value": "default-src 'self'; connect-src 'self' https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com; script-src 'self' 'unsafe-inline' blob: https://events.mapbox.com; img-src 'self' data: blob: https://events.mapbox.com https://events.mapbox.com; style-src 'self' https://events.mapbox.com https://api.tiles.mapbox.com; font-src 'self'; frame-ancestors 'self' entur.no *.entur.no; frame-src 'self' https://events.mapbox.com; object-src 'none'; media-src 'self'; worker-src blob:; child-src blob:"
                     },
                     {
                         "key": "Referrer-Policy",
