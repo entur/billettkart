@@ -30,9 +30,9 @@
         "eject": "react-scripts eject",
         "format": "prettier src --write",
         "deploy": "npm run build && firebase deploy",
-        "get-all-lines": "node --require ts-node/register/transpile-only scripts/get-all-lines.ts",
-        "get-all-tariffzones": "node --require ts-node/register/transpile-only scripts/get-all-tariffzones.ts",
-        "generate-data": "node --require ts-node/register/transpile-only scripts/generate-data.ts"
+        "get-all-lines": "ts-node --dir scripts get-all-lines.ts",
+        "get-all-tariffzones": "ts-node --dir scripts get-all-tariffzones.ts",
+        "generate-data": "ts-node --dir scripts generate-data.ts"
     },
     "eslintConfig": {
         "extends": "react-app"
