@@ -1,16 +1,65 @@
 {
-  "hosting": {
-    "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+    "hosting": {
+        "public": "build",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ],
+        "headers": [
+            {
+                "source": "**",
+                "headers": [
+                    {
+                        "key": "Cache-Control",
+                        "value": "max-age=86400"
+                    },
+                    {
+                        "key": "X-Content-Type-Options",
+                        "value": "nosniff"
+                    },
+                    {
+                        "key": "X-Frame-Options",
+                        "value": "SAMEORIGIN"
+                    },
+                    {
+                        "key": "X-XSS-Protection",
+                        "value": "1; mode=block"
+                    },
+                    {
+                        "key": "Permissions-Policy",
+                        "value": "geolocation=(), microphone=()"
+                    },
+                    {
+                        "key": "Content-Security-Policy",
+                        "value": "default-src 'self'; connect-src 'self' https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com; script-src 'self' 'unsafe-inline' blob: https://events.mapbox.com; img-src 'self' data: blob: https://events.mapbox.com https://events.mapbox.com; style-src 'self' https://events.mapbox.com https://api.tiles.mapbox.com; font-src 'self'; frame-ancestors *; frame-src 'self' https://events.mapbox.com; object-src 'none'; media-src 'self'; worker-src blob:; child-src blob:"
+                    },
+                    {
+                        "key": "Referrer-Policy",
+                        "value": "same-origin"
+                    }
+                ]
+            },
+            {
+                "source": "**/*.@(bundle.js)",
+                "headers": [
+                    {
+                        "key": "Cache-Control",
+                        "value": "max-age=31536000"
+                    }
+                ]
+            },
+            {
+                "source": "**/*.@(json)",
+                "headers": [
+                    {
+                        "key": "Cache-Control",
+                        "value": "max-age=31536000"
+                    }
+                ]
+            }
+        ]
+    }
 }
