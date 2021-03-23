@@ -27,7 +27,7 @@ function featureCollection(features: Feature[]): FeatureCollection {
 }
 
 const PERIOD_TICKETS_CONFIG = {
-    counties: [],
+    counties: ['Innlandet'],
     tariffZones: [
         'SKY:TariffZone:A',
         'SKY:TariffZone:E',
