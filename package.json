@@ -3,25 +3,25 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@auth0/auth0-react": "^1.3.0",
+        "@auth0/auth0-react": "^1.4.0",
         "@entur/button": "^2.5.1",
-        "@entur/form": "^4.2.4",
-        "@entur/icons": "^1.19.0",
-        "@entur/layout": "^1.10.1",
-        "@entur/menu": "^3.5.5",
-        "@entur/sdk": "^3.4.0",
+        "@entur/form": "^4.4.0",
+        "@entur/icons": "^1.20.0",
+        "@entur/layout": "^1.10.2",
+        "@entur/menu": "^3.6.0",
+        "@entur/sdk": "^3.5.0",
         "@entur/tokens": "^3.0.1",
-        "@entur/typography": "^1.6.4",
+        "@entur/typography": "^1.6.5",
         "@mapbox/polyline": "^1.1.1",
         "@turf/bezier-spline": "^6.3.0",
         "@turf/helpers": "^6.3.0",
         "@turf/simplify": "^6.3.0",
         "@types/geojson": "^7946.0.7",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
-        "react-map-gl": "^5.3.8",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-map-gl": "^6.1.12",
         "react-router-dom": "^5.2.0",
-        "react-scripts": "^4.0.2"
+        "react-scripts": "^4.0.3"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -51,13 +51,13 @@
     },
     "devDependencies": {
         "@types/mapbox__polyline": "^1.0.2",
-        "@types/react": "^16.14.4",
-        "@types/react-dom": "^16.9.11",
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.3",
         "@types/react-map-gl": "^5.2.9",
         "@types/react-router-dom": "^5.1.7",
-        "firebase-tools": "^9.4.0",
+        "firebase-tools": "^9.10.0",
         "prettier": "^2.2.1",
         "ts-node": "^9.1.1",
-        "typescript": "^4.1.5"
+        "typescript": "^4.2.4"
     }
 }
