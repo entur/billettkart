@@ -33,6 +33,7 @@ const PERIOD_TICKETS_CONFIG = {
         'SKY:TariffZone:E',
         'SKY:TariffZone:F',
         /RUT:/, // Alle Ruter-sonene
+        /BRA:/, // Alle Brakar-sonene
         'KOL:TariffZone:450', // Dalane
         'KOL:TariffZone:151', // Jæren
         'KOL:TariffZone:150', // Nord-Jæren
