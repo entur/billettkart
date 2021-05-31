@@ -146,6 +146,11 @@ const Home: React.FC = () => {
                 onViewportChange={(nextViewport: any) =>
                     setViewport(nextViewport)
                 }
+                minZoom={4}
+                maxZoom={8}
+                minPitch={0}
+                maxPitch={0}
+                dragRotate={false}
             />
             <Contrast className="control-panel">
                 <header
