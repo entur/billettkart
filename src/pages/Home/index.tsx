@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react'
 import ReactMapGL, { MapRef } from 'react-map-gl'
-import { Layer } from 'mapbox-gl'
 import { Feature, FeatureCollection, LineString } from 'geojson'
+
+import mapboxgl, { Layer } from 'mapbox-gl'
 
 import bezierSpline from '@turf/bezier-spline'
 import simplify from '@turf/simplify'
@@ -17,6 +18,11 @@ import trafikkpakkeneGeojson from './trafikkpakkene.json'
 import LAYERS from './layers.json'
 
 import './styles.css'
+
+// Hack to make mapbox-gl v2 transpilation work
+// https://github.com/visgl/react-map-gl/issues/1266#issuecomment-777285572
+// @ts-ignore
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default // eslint-disable-line import/no-webpack-loader-syntax
 
 const trafikkpakkene = trafikkpakkeneGeojson as FeatureCollection
 
